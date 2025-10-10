@@ -1,0 +1,17 @@
+{
+  "name": "MEOW-market",
+  "metadata": {
+    "description": "Curated collection of productivity plugins for Claude Code: context management, task tracking, and workflow automation",
+    "version": "1.0.0"
+  },
+  "owner": {
+    "name": "shaurgon",
+    "email": "shaurgon@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "awesome-memory",
+      "source": "./plugins/awesome-memory"
+    }
+  ]
+}

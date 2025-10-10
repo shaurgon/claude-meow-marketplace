@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "conport": {
+      "command": "uvx",
+      "args": [
+        "--from", "context-portal-mcp",
+        "conport-mcp",
+        "--mode", "stdio",
+        "--log-level", "INFO"
+      ],
+      "description": "Context Portal - Architectural decision tracking and project context management"
+    },
+    "clickup": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@hauptsachenet/clickup-mcp"
+      ],
+      "env": {
+        "CLICKUP_API_TOKEN": "${CLICKUP_API_TOKEN}",
+        "CLICKUP_TEAM_ID": "${CLICKUP_TEAM_ID}"
+      },
+      "description": "ClickUp MCP - Task management and project tracking integration"
+    }
+  }
+}

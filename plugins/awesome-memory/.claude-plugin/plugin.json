@@ -1,0 +1,23 @@
+{
+  "name": "awesome-memory",
+  "version": "1.0.0",
+  "description": "Intelligent context persistence that automatically saves and restores your project state between Claude Code sessions",
+  "author": {
+    "name": "Shaurgon",
+    "email": "shaurgon@gmail.com",
+    "url": "https://github.com/shaurgon"
+  },
+  "repository": "https://github.com/shaurgon/claude-meow-marketplace.git",
+  "license": "MIT",
+  "keywords": ["claude memory", "claude-context", "conport", "persistence"],
+  "hooks": "./config/hooks.json",
+  "mcpServers": "./config/mcp.json",
+  "permissions": "./config/permissions.json",
+  "commands": [
+    "./commands/context-save.md",
+    "./commands/context-restore.md"
+  ],
+  "agents": [
+    "./agents/context-manager.md"
+  ]
+}
