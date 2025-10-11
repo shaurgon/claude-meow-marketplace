@@ -43,14 +43,14 @@ Task management integration.
 
 ```bash
 # Add to your shell profile (~/.zshrc, ~/.bashrc, etc.)
-export CLICKUP_API_TOKEN="your_api_token_here"
+export CLICKUP_API_KEY="your_api_token_here"
 export CLICKUP_TEAM_ID="your_team_id_here"
 ```
 **OR** append to settings.json:
 ```json
 {
    "env": {
-      "CLICKUP_API_TOKEN": "your_api_token_here",
+      "CLICKUP_API_KEY": "your_api_token_here",
       "CLICKUP_TEAM_ID": "your_team_id_here"
    }
 }
@@ -184,7 +184,7 @@ These hooks automatically save/restore context without manual intervention.
 
 **Check environment variables:**
 ```bash
-echo $CLICKUP_API_TOKEN
+echo $CLICKUP_API_KEY
 echo $CLICKUP_TEAM_ID
 ```
 
