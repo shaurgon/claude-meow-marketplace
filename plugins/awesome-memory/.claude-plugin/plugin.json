@@ -11,7 +11,6 @@
   "license": "MIT",
   "keywords": ["claude memory", "claude-context", "conport", "persistence"],
   "hooks": "./config/hooks.json",
-  "mcpServers": "./config/mcp.json",
   "permissions": "./config/permissions.json",
   "commands": [
     "./commands/context-save.md",
@@ -19,5 +18,29 @@
   ],
   "agents": [
     "./agents/context-manager.md"
-  ]
+  ],
+  "mcpServers": {
+    "conport": {
+      "command": "uvx",
+      "args": [
+        "--from", "context-portal-mcp",
+        "conport-mcp",
+        "--mode", "stdio",
+        "--log-level", "INFO"
+      ],
+      "description": "Context Portal - Architectural decision tracking and project context management"
+    },
+    "clickup": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@hauptsache.net/clickup-mcp"
+      ],
+      "env": {
+        "CLICKUP_API_KEY": "${CLICKUP_API_KEY}",
+        "CLICKUP_TEAM_ID": "${CLICKUP_TEAM_ID}"
+      },
+      "description": "ClickUp MCP - Task management and project tracking integration"
+    }
+  }
 }
