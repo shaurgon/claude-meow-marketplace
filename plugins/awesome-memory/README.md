@@ -203,13 +203,29 @@ rm -rf context_portal/
 # Will recreate on next use
 ```
 
+### `.gitignore` Configuration
+
+**IMPORTANT:** Always exclude `context_portal/` from version control to prevent:
+- Committing sensitive project context and decisions
+- Database conflicts between team members
+- Bloating repository with binary database files and vector embeddings
+
+Add to your project's `.gitignore`:
+
+```gitignore
+# awesome-memory context persistence
+context_portal/
+```
+
+**Note:** Each developer maintains their own local context. ConPort is designed for personal context management, not team synchronization.
+
 ## Development
 
 ### Local Testing
 
 ```bash
 # Clone marketplace
-git clone https://github.com/shaurgon/claude-marketplace.git
+git clone https://github.com/shaurgon/claude-meow-marketplace.git
 cd claude-marketplace
 
 # Add local marketplace
@@ -221,7 +237,7 @@ cd claude-marketplace
 
 ## Contributing
 
-Issues and pull requests welcome at [claude-marketplace](https://github.com/shaurgon/claude-marketplace).
+Issues and pull requests welcome at [claude-meow-marketplace](https://github.com/shaurgon/claude-meow-marketplace).
 
 ## License
 

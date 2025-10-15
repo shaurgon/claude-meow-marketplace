@@ -1,6 +1,6 @@
 # MEOW Market
 
-Official Plugin Marketplace for Claude Code - curated collection of plugins for everyday work.
+Plugin Marketplace for Claude Code - my collection for everyday work.
 
 ## About
 
@@ -15,7 +15,7 @@ MEOW Market is a plugin catalog for [Claude Code](https://claude.com/code), feat
 
 ## Available Plugins
 
-### awesome-memory
+### [awesome-memory](./plugins/awesome-memory/README.md)
 
 Automatic project context persistence with intelligent management.
 
@@ -31,7 +31,7 @@ Automatic project context persistence with intelligent management.
 /plugin install awesome-memory@MEOW-market
 ```
 
-[Plugin documentation](./plugins/awesome-memory/README.md)
+**RTFM by security reasons!**
 
 ## License
 
